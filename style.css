@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins&family=Red+Rose:wght@300;400&family=Roboto:wght@100;300&display=swap');
+
+:root {
+    --left: #4A00E0;
+    --right: #8E2DE2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    margin: 0 auto;
+    background: #8E2DE2;
+    background: linear-gradient(to right, var(--left), var(--right));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body:after {
+    content: "";
+    opacity: .2;
+    background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Montserrat, sans-serif;
+    border-bottom: 10px solid white;
+
+}
+
+#main {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 40vh;
+    margin-bottom: 0vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#description {
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.icon {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+#projectcontainer {
+    display: flex;
+}
+
+footer: {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa-fw {
+    cursor: pointer;
+    filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2));
+transition: .3s ease;
+}
+
+.fa-fw:hover {
+    transform: scale(1.3);
+transition: .3s ease;
+}
+
+#particles-js {
+    z-index: 100;
+
+}
+
+#projects {
+    margin-top: 50vh;
+    display: flex;
+    /* establish flex container */
+    flex-wrap: wrap;
+    /* enable flex items to wrap */
+    justify-content: space-evenly;
+
+}
+
+.project {
+    background: #232323;
+    width: 25vw;
+    border-radius: 10px;
+    height: auto;
+    min-width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 20px 100px 20px; /* PADDING BOTTOM MAKES DIV TALLER */
+    text-align: center;
+    position: relative;
+}
+
+.projecttitle {
+    color: white;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--left);
+    text-align: left;
+}
+
+.projectdescription {
+    color: white;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+
+}
+
+.viewmore {
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, var(--left) 0%, var(--right) 100%);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px !important;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    font-size: 25px;
+    font-weight: 400;
+    transition: .3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.viewmore:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--right) 0%, var(--left) 100%);
+    transform: scale(1.1);
+    transition: .3s ease;
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--left);
+    border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--right);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5959DE;
+    background: #222A63;
+
+}
