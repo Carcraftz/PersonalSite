@@ -52,6 +52,7 @@ if(/Mobi/.test(navigator.userAgent)){
        $('#projects').animate({'margin-top': '20vh'}, 500);
 
 }
+
 //ye i could have just gotten a random gradient from uigradients but some of them suck so i just handpicked a few good ones
 let randomthemes = [
   ["#ff8008", "#ffc837"],
@@ -75,11 +76,30 @@ let randomthemes = [
   ["#4776E6","#8E54E9"],
   ["#DA22FF","#9733EE"]
 ];
+//images curated by me (yes i could get random ones but it wouldn't look as nice :))
+let randimages = [
+  `url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+    `url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+  `url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+  `url("https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80")`,
+  `url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");`,
+  `url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80")`,
+  `url("https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+  `url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+  `url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80");`,
+  `url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1387&q=80");`,
+  `url("https://images.unsplash.com/photo-1417577097439-425fb7dec05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")`,
+  `url("https://images.unsplash.com/photo-1531160492875-2a09eb0cd73b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80")`,
+
+]
 
 //grab a random gradient
 function rand(items) {
   return items[~~(items.length * Math.random())];
 }
 let randcolor = rand(randomthemes);
+let randimage = rand(randimages)
 document.documentElement.style.setProperty("--left", randcolor[0]);
 document.documentElement.style.setProperty("--right", randcolor[1]);
+console.log(randimage)
+document.documentElement.style.setProperty("--image", randimage);;
