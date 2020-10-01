@@ -102,4 +102,5 @@ let randimage = rand(randimages)
 document.documentElement.style.setProperty("--left", randcolor[0]);
 document.documentElement.style.setProperty("--right", randcolor[1]);
 console.log(randimage)
-document.documentElement.style.setProperty("--image", randimage);;
+//removed - tbh the image changer looked too inconsistent on reload, just changing the gradient is fine
+//document.documentElement.style.setProperty("--image", randimage);;
