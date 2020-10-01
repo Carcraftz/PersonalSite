@@ -122,7 +122,7 @@ function opentrack() {
 }
 let currenttrackurl = "https://spotify.com"
 let lastsongname = ""
-
+let paused = false
 function fetchSpotify() {
     //grab spotify currently playing data and update description - there is probably a way better way to do this than long polling but I couldn't find one
     fetch("https://api.carcraftz.dev/spotifycp").then(res => {
@@ -132,7 +132,8 @@ function fetchSpotify() {
         if (json) {
             if (json["is_playing"]) {
                 let songname = json.item.name
-                if (songname != lastsongname) {
+                if (songname != lastsongname || paused) {
+                  paused = false
                     lastsongname = songname
                     let artist = json.item.artists[0].name
                     let cover = json.item.album.images[0].url
@@ -143,6 +144,7 @@ function fetchSpotify() {
             } else {
                 document.getElementById("nowplaying").innerHTML = ``
                 currenttrackurl = ""
+                paused = true
             }
         } else {
             document.getElementById("nowplaying").innerHTML = ``
