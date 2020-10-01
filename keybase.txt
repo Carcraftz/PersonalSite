@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/carcraftz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://carcraftz.dev
+  * I am carcraftz (https://keybase.io/carcraftz) on keybase.
+  * I have a public key ASB2RiBio8qjRfeYuXM8JGZqjEaBJGP_wRndD6BclfxfEQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017c057cabaaf9045ba694c122f5eb732397cf3d0a5a306c13f0e26fb4e7953b6d0a",
+      "host": "keybase.io",
+      "kid": "012076462062a3caa345f798b9733c24666a8c46812463ffc119dd0fa05c95fc5f110a",
+      "uid": "bf0e640a76ed65e88d28d3454f090519",
+      "username": "carcraftz"
+    },
+    "merkle_root": {
+      "ctime": 1601561496,
+      "hash": "600ddcc06ccc62cb256ffc4a33f10c89a5de42c15b8c3044fee6adebab85008e0d3ff6be171035ab73923920c2802f4615f188bfd1da1d2ff0a15fa438abcf90",
+      "hash_meta": "07ca5ca8a17ffbccea8938bb213f6377178a62f064c39c4f1b48eddc85d4dfa5",
+      "seqno": 17720163
+    },
+    "service": {
+      "entropy": "zo3T9awTGFFpAohvqzG0uJWx",
+      "hostname": "carcraftz.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1601561546,
+  "expire_in": 504576000,
+  "prev": "0461b55db62bb66e38654f01a8276048e72a86080532dd3cbdffb623c3725dac",
+  "seqno": 53,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgdkYgYqPKo0X3mLlzPCRmaoxGgSRj/8EZ3Q+gXJX8XxEKp3BheWxvYWTESpcCNcQgBGG1XbYrtm44ZU8BqCdgSOcqhggFMt08vf+2I8NyXazEILJJCTCSGrcNwnDYMrMSCHA5yqBb8EseQOVv+oXxTIN3AgHCo3NpZ8RArWq09KSjJ9c+NVVdiVrXvOAojK8piceMr4JGdLfkynBDRdwzRxgEkpx9YBZYkFxdj1E9SJOA6eyPoKW1fRqpCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGJccUvzHlxbv40G/P9Fr1GAl8Rz/8Mx5aXw5nzUDtb9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/carcraftz
+
+==================================================================
