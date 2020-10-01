@@ -7,7 +7,7 @@ function godown() {
         runlol = true;
         $("#projects").show();
         disableScrolling()
-        $('#projects').animate({
+        $('#projects').velocity({
             'margin-top': '20vh'
         }, 300);
         setTimeout(scroll => {
@@ -36,7 +36,7 @@ function downbutt() {
     disableScrolling()
     runlol = true;
     $("#projects").show();
-    $('#projects').animate({
+    $('#projects').velocity({
         'margin-top': '20vh'
     }, 100);
     setTimeout(scroll => {
@@ -55,13 +55,13 @@ window.addEventListener("wheel", event => godown());
 //show projects automatically on mobile
 if (/Mobi/.test(navigator.userAgent)) {
     $("#projects").show();
-    $('#projects').animate({
+    $('#projects').velocity({
         'margin-top': '20vh'
     }, 500);
 
 }
 //slide down title
-$('#main').animate({
+$('#main').velocity({
     'margin-top': '40vh'
 }, 300);
 
@@ -151,5 +151,5 @@ function fetchSpotify() {
         }
     })
 }
-fetchSpotify()
+setTimeout(fetchSpotify,100)
 setInterval(fetchSpotify, 1000)
