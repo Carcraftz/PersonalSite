@@ -8,4 +8,6 @@ lists my projects and social medias
 
 Supports ultrawide and all screen sizes :) 
 
-Cool colors and photos! Try reloading to get a new one each time
+Cool colors! Try reloading to get a new one each time
+
+Live spotify Now Playing
