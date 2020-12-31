@@ -125,7 +125,7 @@ let lastsongname = ""
 let paused = false
 function fetchSpotify() {
     //grab spotify currently playing data and update description - there is probably a way better way to do this than long polling but I couldn't find one
-    fetch("https://carapi.glitch.me/spotify/currentlyplaying").then(res => {
+    fetch("https://api.carcraftz.dev/spotify/currentlyplaying").then(res => {
         return res.json()
     }).then(json => {
         console.log(json)
